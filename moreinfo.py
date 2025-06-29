@@ -13,8 +13,6 @@ repeticoes_jogadores = {}
 
 data_list = list(data['transferências'])
 
-
-
 print('\nLISTA DE TIMES:')
 for registro in data_list:
     # print(f'{registro['jogador']}')
