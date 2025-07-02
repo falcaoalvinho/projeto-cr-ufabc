@@ -31,12 +31,6 @@ list((jogadores, repetidos, id_repetidos))
 for jogador in jogadores:
     repeticoes_jogadores[str(jogador)] = jogadores.count(jogador)
 
-# print('\nJOGADORES REPETIDOS: ')
-# print(', '.join(repetidos))
-
-# print('\nIDs DOS JOGADORES REPETIDOS')
-# print(', '.join(id_repetidos))
-
 print('\nREPETIÇÕES DE CADA JOGADOR: ')
 for jogador, repeticoes in repeticoes_jogadores.items():
     if repeticoes > 1:
