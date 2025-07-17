@@ -5,10 +5,15 @@
     nomes de jogadores únicos, o que poderia apontar para repetições nos registros da API, quanto
     para jogadores que de fato protagonizaram multiplas transferências num mesmo periódo.
 '''
+
+# Carregamento do arquivo .env
+from dotenv import load_dotenv
+import os
+load_dotenv()
+
 # FETCH da API
 import requests
-url = input('INSIRA A URL DA API: ')
-response = requests.get(url)
+response = requests.get(os.getenv('GET_TRANSFERENCIAS'))
 data = response.json()
 
 # Variáveis do código
