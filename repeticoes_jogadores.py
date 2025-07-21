@@ -5,7 +5,6 @@
     nomes de jogadores únicos, o que poderia apontar para repetições nos registros da API, quanto
     para jogadores que de fato protagonizaram multiplas transferências num mesmo periódo.
 '''
-
 # Carregamento do arquivo .env
 from dotenv import load_dotenv
 import os
