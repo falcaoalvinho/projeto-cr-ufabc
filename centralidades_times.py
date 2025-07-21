@@ -32,10 +32,10 @@ cent_out_dregree    = dict(sorted(cent_out_dregree.items(), key=lambda item: ite
 cent_in_dregree     = dict(sorted(cent_in_dregree.items(), key=lambda item: item[1], reverse=True))
 pagerank            = dict(sorted(pagerank.items(), key=lambda item: item[1], reverse=True))
 
-# Print dos valores para cada um dos casos usando loops de chave, valor
+# Impressão dos dados
 print('\nCENTRALIDADE: VÉRTICES (NODES)')
 for chave, valor in cent_vertices.items():
-    print(f'{chave} : {valor}')
+    print(f'    {chave} : {valor}')
 print('FINAL DA LISTA PARA VÉRTICES (NODES)')
 
 input('\nAPERTE [ENTER] PARA CONTINUAR...')
@@ -43,7 +43,7 @@ os.system('cls')
 
 print('\nCENTRALIDADE: PROXIMIDADE (CLOSENESS)')
 for chave, valor in cent_proximidade.items():
-    print(f'{chave} : {valor}')
+    print(f'    {chave} : {valor}')
 print('FINAL DA LISTA PARA PROXIMIDADE (CLOSENESS)')
 
 input('\nAPERTE [ENTER] PARA CONTINUAR...')
@@ -51,7 +51,7 @@ os.system('cls')
 
 print('\nCENTRALIDADE: INTERMEDIAÇÃO (BETWEENNESS)')
 for chave, valor in cent_intermediacao.items():
-    print(f'{chave} : {valor}')
+    print(f'    {chave} : {valor}')
 print('FINAL DA LISTA PARA INTERMEDIAÇÃO (BETWEENNESS)')
 
 input('\nAPERTE [ENTER] PARA CONTINUAR...')
@@ -59,7 +59,7 @@ os.system('cls')
 
 print('\nCENTRALIDADE: AUTOVETOR (EIGENVECTOR)')
 for chave, valor in cent_autovetor.items():
-    print(f'{chave} : {valor}')
+    print(f'    {chave} : {valor}')
 print('FINAL DA LISTA PARA AUTOVETOR (EIGENVECTOR)')
 
 input('\nAPERTE [ENTER] PARA CONTINUAR...')
@@ -67,7 +67,7 @@ os.system('cls')
 
 print('\nCENTRALIDADE: GRAU DE SAÍDA (OUT DEGREE)')
 for chave, valor in cent_autovetor.items():
-    print(f'{chave} : {valor}')
+    print(f'    {chave} : {valor}')
 print('FINAL DA LISTA PARA GRAU DE SAÍDA (OUT DEGREE)')
 
 input('\nAPERTE [ENTER] PARA CONTINUAR...')
@@ -75,7 +75,7 @@ os.system('cls')
 
 print('\nCENTRALIDADE: GRAU DE ENTRADA (IN DEGREE)')
 for chave, valor in cent_autovetor.items():
-    print(f'{chave} : {valor}')
+    print(f'    {chave} : {valor}')
 print('FINAL DA LISTA PARA GRAU DE ENTRADA (IN DEGREE)')
 
 input('\nAPERTE [ENTER] PARA CONTINUAR...')
@@ -83,7 +83,7 @@ os.system('cls')
 
 print('\nPAGERANK DOS CLUBES:')
 for chave, valor in pagerank.items():
-    print(f'{chave} : {valor}')
+    print(f'    {chave} : {valor}')
 print('FINAL DA LISTA PARA PAGERANK')
 
 input('\nEXECUÇÃO FINALIZADA COM SUSCESSO, APERTE [ENTER] PARA ENCERRAR...')

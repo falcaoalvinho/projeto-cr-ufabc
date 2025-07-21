@@ -43,7 +43,7 @@ for jogador in jogadores:
 print('\nJOGADORES COM MAIS DE UM REGISTRO E\nA QUANTIDADE DE REGISTROS NOS SEUS NOMES: \n')
 for jogador, repeticoes in repeticoes_jogadores.items():
     if repeticoes > 1:
-        print(f'{jogador}: {repeticoes}')
+        print(f'    {jogador}: {repeticoes}')
 input('\nEXECUÇÃO FINALIZADA COM SUSCESSO, APERTE [ENTER] PARA ENCERRAR...')
 
 '''
