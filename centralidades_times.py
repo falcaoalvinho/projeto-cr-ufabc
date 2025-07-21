@@ -8,7 +8,7 @@
 import networkx as nx
 import os
 
-# Import da função que usamos para construir o grafo, e instanciamento de um modelo
+# Import da função que usamos para construir o grafo, e instância
 from grafo import montar_grafo
 grafo = montar_grafo()
 

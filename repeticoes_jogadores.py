@@ -31,6 +31,7 @@ for registro in data_list:
 
     jogadores.append(registro['jogador'])
 
+# Remove registros que podem estar repetidos nas variáveis
 set(jogadores)
 set(repetidos)
 set(id_repetidos)
@@ -39,10 +40,11 @@ list((jogadores, repetidos, id_repetidos))
 for jogador in jogadores:
     repeticoes_jogadores[str(jogador)] = jogadores.count(jogador)
 
-print('\nJOGADORES COM MAIS DE UM REGISTRO E A QUANTIDADE DE REGISTROS NOS SEUS NOMES: ')
+print('\nJOGADORES COM MAIS DE UM REGISTRO E\nA QUANTIDADE DE REGISTROS NOS SEUS NOMES: \n')
 for jogador, repeticoes in repeticoes_jogadores.items():
     if repeticoes > 1:
         print(f'{jogador}: {repeticoes}')
+input('\nEXECUÇÃO FINALIZADA COM SUSCESSO, APERTE [ENTER] PARA ENCERRAR...')
 
 '''
     SOBRE OS JOGADORES QUE APARECEM EM MAIS DE UM REGISTRO DE TRANSFERÊNCIA
