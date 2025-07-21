@@ -77,3 +77,13 @@ os.system('cls')
     Tivemos um problema na geração de dados sobre o 'pagerank' do gráfico, se possível (e/ou) necessário
     correr atrás de resolver, fora isso aparentemente tudo bem
 '''
+
+'''
+    ANÁLISE PRELIMINAR DOS DADOS DE CENTRALIDADE
+
+    Observamos fortes tendências entre alguns clubes, que de maneira consistente aparecem nas posições mais elevadas dos
+    rankings de centralidade, como por exemplo o Chelsea, entretanto também percebemos que diferentemente do que imaginavamos,
+    não se pode afirmar de maneira concisa a existência de uma hegemonia europeia. Para além disso percebemos que por mais
+    que seja possível aferir a existência de 'protagonistas', não necesseriamente os times mais relevantes na midia,
+    são os times mais relevantes dentro da lógica do mercado de atletas.
+'''
