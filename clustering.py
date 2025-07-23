@@ -13,6 +13,7 @@ import os
 from grafo import montar_grafo
 grafo = montar_grafo()
 
+# Cálculo e organização dos dados de clustering
 clustering = nx.clustering(grafo, grafo.nodes)
 clustering = dict(sorted(clustering.items(), key=lambda item: item[1], reverse=True))
 
@@ -23,7 +24,5 @@ for chave, valor in clustering.items():
 
 print(f'\nCLUSTERING MÉDIO: {nx.average_clustering(grafo)}')
 
-input(f'\nAPERTE [ENTER] PARA CONTINUAR...')
+input('EXECUÇÃO CONCLUIDA COM SUCESSO, APERTE [ENTER] PARA ENCERRAR...')
 os.system('cls')
-
-input(f'EXECUÇÃO CONCLUIDA COM SUCESSO, APERTE [ENTER] PARA ENCERRAR...')
