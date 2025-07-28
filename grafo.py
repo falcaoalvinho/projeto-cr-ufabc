@@ -42,5 +42,9 @@ def montar_grafo():
                         })
                 
                 grafo[conexao['de']][conexao['para']]['quantidade_transferencias'] = len(grafo[conexao['de']][conexao['para']]['transferencias'])
+                grafo[conexao['de']][conexao['para']]['weight'] = 1 / grafo[conexao['de']][conexao['para']]['quantidade_transferencias']
+
     return grafo
+
+montar_grafo()
     
